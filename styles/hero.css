@@ -1,0 +1,110 @@
+section.hero {
+    
+    & h1 div {
+        display: inline-block;
+        /* border: 2px red solid; */
+        overflow: hidden;
+        height: 2.5rem;
+        width: min-content;
+        vertical-align: bottom;
+    }
+
+    & h1 span:nth-child(1),
+    & h1 span:nth-child(4) {
+        color: var(--snitap-sky-mid);
+    }
+
+    & h1 span:nth-child(2) {
+        color: var(--snitap-joy-mid);
+    }
+
+    & h1 span:nth-child(3) {
+        color: var(--snitap-leaf-mid);
+    }
+
+    & h1 span {
+        /* border: 2px lime solid; */
+        display: block;
+
+        animation: slideUp 6s infinite ease;
+    }
+}
+
+@keyframes slideUp {
+    0%, 22% {
+        transform: translateY(0);
+    }
+
+    23% {
+        transform: translateY(calc((var(--step-1)) - 12px));
+    }
+
+    25% {
+        transform: translateY(calc((var(--step-1)) + 8px));
+    }
+
+    27% {
+        transform: translateY(calc((var(--step-1)) - 3px));
+    }
+
+    29% {
+        transform: translateY(calc((var(--step-1)) + 3px));
+    }
+
+    33%, 55% {
+        transform: translateY(var(--step-1));
+    }
+
+    56% {
+        transform: translateY(calc((var(--step-2)) - 12px));
+    }
+
+    58% {
+        transform: translateY(calc((var(--step-2)) + 8px));
+    }
+
+    60% {
+        transform: translateY(calc((var(--step-2)) - 3px));
+    }
+
+    62% {
+        transform: translateY(calc((var(--step-2)) + 3px));
+    }
+
+    66%, 88% {
+        transform: translateY(var(--step-2))
+    }
+
+    89% {
+        transform: translateY(calc((var(--step-3)) - 12px));
+    }
+
+    91% {
+        transform: translateY(calc((var(--step-3)) + 8px));
+    }
+
+    93% {
+        transform: translateY(calc((var(--step-3)) - 3px));
+    }
+
+    95% {
+        transform: translateY(calc((var(--step-3)) + 3px));
+    }
+
+    100% {
+        transform: translateY(var(--step-3))
+    }
+}
+
+@media (width >= 80em) {
+
+    section.hero {
+        & h1 div {
+            height: 5rem;
+        }
+
+        & h1 {
+            max-width: 40rem;
+        }
+    }
+}

@@ -23,11 +23,15 @@
 
   --text-sm: .875rem;
   --text-base: 1rem;
-  --text-lg: 2.5rem;
-  --text-xl: 4rem;
+  --text-lg: 1.5rem;
+  --text-xl: 2rem;
 
   --py-lg: 1rem;
   --px-lg: 1.5rem;
+
+  --step-1: -2.5rem;
+  --step-2: -5rem;
+  --step-3: -7.5rem;
 }
 
 html, button {
@@ -56,7 +60,16 @@ a {
 @media (width >= 80em) {
 
   :root {
+
+    --text-lg: 2.5rem;
+    --text-xl: 4rem;
+
     --py-lg: 1rem;
+    --py-xl: 2.5rem;
     --px-lg: 2rem;
+
+    --step-1: -5rem;
+    --step-2: -10rem;
+    --step-3: -15rem;
   }
 }
