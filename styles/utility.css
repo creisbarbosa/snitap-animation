@@ -6,6 +6,10 @@
   padding-block: var(--py-lg);
 }
 
+.py-xl {
+  padding-block: var(--py-xl);
+}
+
 .container {
   --max-width: 312px;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);

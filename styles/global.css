@@ -27,6 +27,8 @@
   --text-xl: 2rem;
 
   --py-lg: 1rem;
+  --py-xl: 1.5rem;
+
   --px-lg: 1.5rem;
 
   --step-1: -2.5rem;
@@ -66,6 +68,7 @@ a {
 
     --py-lg: 1rem;
     --py-xl: 2.5rem;
+    
     --px-lg: 2rem;
 
     --step-1: -5rem;
